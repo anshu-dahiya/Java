@@ -11,8 +11,6 @@
 //}
 
 
-import java.security.PublicKey;
-
 //Problem 2(Method to Print following Pattern)
 //*
 //**
