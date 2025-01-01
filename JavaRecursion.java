@@ -17,23 +17,39 @@
 
 
 //Problem 2 (Fibonacci Sequence)
+//public class JavaRecursion {
+//    static int fibonacci(int n){
+//        if(n==0){
+//            return 0;
+//        }
+//        else if (n==1) {
+//            return 1;
+//        }
+//        else{
+//            return fibonacci(n-1) + fibonacci(n-2);
+//        }
+//    }
+//    public static void main(String[] args){
+//        int terms = 10;
+//        System.out.println("Fibonaaci Sequence up to "+ terms +" terms is:");
+//        for(int i=0; i<terms; i++){
+//            System.out.print(fibonacci(i) + " ");
+//        }
+//    }
+//}
+
+
+//Problem 3(Calculate sum of first n Natural number)
 public class JavaRecursion {
-    static int fibonacci(int n){
-        if(n==0){
-            return 0;
+    static int sumNatural(int n){
+        if(n==1){
+            return n;
         }
-        else if (n==1) {
-            return 1;
-        }
-        else{
-            return fibonacci(n-1) + fibonacci(n-2);
-        }
+        return n + sumNatural(n-1);
     }
     public static void main(String[] args){
-        int terms = 10;
-        System.out.println("Fibonaaci Sequence up to "+ terms +" terms is:");
-        for(int i=0; i<terms; i++){
-            System.out.print(fibonacci(i) + " ");
-        }
+
+        int sum = sumNatural(6);
+        System.out.println(sum);
     }
 }
