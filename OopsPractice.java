@@ -27,3 +27,6 @@ public class OopsPractice {
         System.out.println(obj.getSalary());
     }
 }
+
+//problem 2
+
