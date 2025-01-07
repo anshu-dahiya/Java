@@ -19,5 +19,6 @@ public class Array_Two_Sum {
         int[] nums = {7, 8, 2, 9, 10, 11};
         int x = 13;
         System.out.println(Arrays.toString(twoSum(nums,x)));
+        //Arrays.toString method is used to convert an array into a human-readable string representation.
     }
 }
