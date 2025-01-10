@@ -26,10 +26,12 @@
 //}
 
 
-//Problem 1 (Create Class Cylinder and set its height and radius)
+//Problem 1(Create Class Cylinder and set its height and radius)
+//problem 2(Create Methods to calculate surface area and volume area of cylinder)
 class Cylinder{
     private int radius;
     private int height;
+    double pi = 3.14159265359;
 
     public void setRadius(int r){
         radius = r;
@@ -46,6 +48,14 @@ class Cylinder{
     public int getHeight(){
         return height;
     }
+
+    public double surfaceArea(){
+        return 2*pi*radius*height + 2*pi*(radius*radius);
+    }
+
+    public double volumeArea(){
+        return pi*(radius*radius)*height;
+    }
 }
 public class GetterSetter{
     public static void main(String[] args) {
@@ -54,7 +64,8 @@ public class GetterSetter{
        cy.setHeight(12);
        System.out.println(cy.getRadius());
        System.out.println(cy.getHeight());
+       System.out.println(cy.surfaceArea());
+       System.out.println(cy.volumeArea());
     }
-
 }
 
