@@ -1,26 +1,60 @@
-class MyEmployee{
-    private int id;
-    private String name;
+//class MyEmployee{
+//    private int id;
+//    private String name;
+//
+//    public void setId(int i){
+//        id = i;
+//    }
+//    public void setName(String n){
+//        name = n;
+//    }
+//    public int getId(){
+//        return id;
+//    }
+//    public String getName(){
+//        return name;
+//    }
+//}
+//public class GetterSetter {
+//    public static void main(String[] args) {
+//        MyEmployee emp = new MyEmployee();
+//        emp.setId(24);
+//        emp.setName("Anshu");
+//        System.out.println(emp.getId());
+//        System.out.println(emp.getName());
+//    }
+//}
 
-    public void setId(int i){
-        id = i;
+
+//Problem 1 (Create Class Cylinder and set its height and radius)
+class Cylinder{
+    private int radius;
+    private int height;
+
+    public void setRadius(int r){
+        radius = r;
     }
-    public void setName(String n){
-        name = n;
+
+    public int getRadius(){
+        return radius;
     }
-    public int getId(){
-        return id;
+
+    public void setHeight(int h){
+        height = h;
     }
-    public String getName(){
-        return name;
+
+    public int getHeight(){
+        return height;
     }
 }
-public class GetterSetter {
+public class GetterSetter{
     public static void main(String[] args) {
-        MyEmployee emp = new MyEmployee();
-        emp.setId(24);
-        emp.setName("Anshu");
-        System.out.println(emp.getId());
-        System.out.println(emp.getName());
+       Cylinder cy = new Cylinder();
+       cy.setRadius(9);
+       cy.setHeight(12);
+       System.out.println(cy.getRadius());
+       System.out.println(cy.getHeight());
     }
+
 }
+
