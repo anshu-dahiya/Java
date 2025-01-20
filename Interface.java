@@ -14,12 +14,22 @@ class AvonCycle implements Bicycle{
         speed = speed + increment;
         System.out.println(speed);
     }
-
+    public void light(boolean n){
+        if(n){
+            System.out.println("Light is ON");
+        }
+        else{
+            System.out.println("Light is OFF");
+        }
+    }
 }
 public class Interface {
     public static void main(String[] args) {
-        Bicycle ac = new AvonCycle();
+        Bicycle ac = new AvonCycle();  //Reference of Interface
         ac.applyBrake(3);
         ac.speedUp(1);
+
+        AvonCycle av = new AvonCycle();
+        av.light(false);
     }
 }
