@@ -14,6 +14,7 @@ class AvonCycle implements Bicycle{
         speed = speed + increment;
         System.out.println(speed);
     }
+
 }
 public class Interface {
     public static void main(String[] args) {
