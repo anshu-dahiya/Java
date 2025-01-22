@@ -1,10 +1,14 @@
 //All Methods in Interface are Abstract Method
 //Class Implement the Interface have to Implement all those Abstract Method
+//Multiple Interfaces can be implemented together
 interface Bicycle{
     void applyBrake(int decrement);
     void speedUp(int increment);
 }
-class AvonCycle implements Bicycle{
+interface Accessories{
+    void horn(boolean h);
+}
+class AvonCycle implements Bicycle, Accessories{
     int speed = 7;
     public void applyBrake(int decrement){
         speed = speed - decrement;
@@ -22,6 +26,14 @@ class AvonCycle implements Bicycle{
             System.out.println("Light is OFF");
         }
     }
+    public void horn(boolean h){
+        if(h){
+            System.out.println("Horn Blowing...");
+        }
+        else{
+            System.out.println("Tap Button to Blow horn");
+        }
+    }
 }
 public class Interface {
     public static void main(String[] args) {
@@ -30,6 +42,9 @@ public class Interface {
         ac.speedUp(1);
 
         AvonCycle av = new AvonCycle();
-        av.light(false);
+        av.light(true);
+
+        Accessories aa = new AvonCycle();
+        aa.horn(true);
     }
 }
