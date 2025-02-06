@@ -1,6 +1,7 @@
 //All Methods in Interface are Abstract Method
 //Class Implement the Interface have to Implement all those Abstract Method
 //Multiple Interfaces can be implemented together
+//While Implementing interface methods in class they should be public access modifier
 interface Bicycle{
     void applyBrake(int decrement);
     void speedUp(int increment);
